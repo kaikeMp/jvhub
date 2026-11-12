@@ -1,0 +1,6 @@
+# Normalize line endings of text files
+* text=auto eol=lf
+
+# Measured data are stored exactly as recorded (byte for byte)
+tests/data/** -text
+*.xlsx binary

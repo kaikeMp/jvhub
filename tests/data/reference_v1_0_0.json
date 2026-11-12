@@ -1,0 +1,108 @@
+{
+  "_source": "JV Analysis Hub v1.0.0 (GitHub tag v1.0.0, commit 62b6fa9) opvtools",
+  "_numpy": "2.5.4",
+  "illuminated": {
+    "illuminated_synthetic_1.txt": {
+      "Jsc_mAcm2": 18.296475994895786,
+      "Voc_V": 0.7173388650968864,
+      "FF": 0.6944651408454353,
+      "PCE_percent": 9.11469755602372,
+      "Rs_ohm": 18.412388203675935,
+      "Rsh_ohm": 6016.3999560669845,
+      "Vmax_V": 0.5771847898599067,
+      "Jmax_mAcm2": -15.79164544207068
+    },
+    "illuminated_synthetic_2.txt": {
+      "Jsc_mAcm2": 21.265878233988104,
+      "Voc_V": 0.9061902884053616,
+      "FF": 0.7873551149323464,
+      "PCE_percent": 15.173067139580763,
+      "Rs_ohm": 17.54115139093585,
+      "Rsh_ohm": 19848.173200613834,
+      "Vmax_V": 0.7613075383589061,
+      "Jmax_mAcm2": -19.930273082922852
+    },
+    "illuminated_real.txt": {
+      "Jsc_mAcm2": 22.242529446267433,
+      "Voc_V": 0.8093370739425154,
+      "FF": 0.7000626642723667,
+      "PCE_percent": 12.602320653049293,
+      "Rs_ohm": 14.27851481526161,
+      "Rsh_ohm": 21745.23910913114,
+      "Vmax_V": 0.6556371174470954,
+      "Jmax_mAcm2": -19.221487493142423
+    },
+    "illuminated_real.txt[A]": {
+      "Jsc_mAcm2": 22.242529446267433,
+      "Voc_V": 0.8093370739425154,
+      "FF": 0.7000626642723667,
+      "PCE_percent": 12.602320653049293,
+      "Rs_ohm": 14.27851481526161,
+      "Rsh_ohm": 21745.239109131144,
+      "Vmax_V": 0.6556371174470954,
+      "Jmax_mAcm2": -19.221487493142423
+    },
+    "illuminated_real.txt[mA/cm2]": {
+      "Jsc_mAcm2": 22.242529446267433,
+      "Voc_V": 0.8093370739425154,
+      "FF": 0.7000626642723667,
+      "PCE_percent": 12.602320653049293,
+      "Rs_ohm": 14.278514815261607,
+      "Rsh_ohm": 21745.23910913115,
+      "Vmax_V": 0.6556371174470954,
+      "Jmax_mAcm2": -19.221487493142423
+    },
+    "illuminated_real.txt[Pin=50]": {
+      "Jsc_mAcm2": 22.242529446267433,
+      "Voc_V": 0.8093370739425154,
+      "FF": 0.7000626642723667,
+      "PCE_percent": 25.204641306098587,
+      "Rs_ohm": 14.27851481526161,
+      "Rsh_ohm": 21745.23910913114,
+      "Vmax_V": 0.6556371174470954,
+      "Jmax_mAcm2": -19.221487493142423
+    }
+  },
+  "mott_gurney": {
+    "dark_mott_gurney_real.csv": {
+      "Mobility_cm2Vs": 0.00011489290635412738,
+      "Voltage_m2": 1.679999947548,
+      "CurrentDensity_m2": 1259.730404449889
+    },
+    "dark_synthetic_tab_header.txt": {
+      "Mobility_cm2Vs": 0.00016983315701065395,
+      "Voltage_m2": 2.9,
+      "CurrentDensity_m2": 5548.61176114
+    }
+  },
+  "richardson_schottky": {
+    "dark_richardson_schottky_real.csv": {
+      "phi_eV": 0.5198010025202637,
+      "J0_A_m2": 87.20978660796638
+    },
+    "dark_richardson_schottky_real.csv[L=350nm]": {
+      "phi_eV": 0.5198010025202637,
+      "J0_A_m2": 87.20978660796638,
+      "phi_eff_min": 0.49111586954323333
+    },
+    "dark_synthetic.csv": {
+      "phi_eV": 0.5091893631072443,
+      "J0_A_m2": 131.80717699686102
+    },
+    "dark_synthetic.csv[L=350nm]": {
+      "phi_eV": 0.5091893631072443,
+      "J0_A_m2": 131.80717699686102,
+      "phi_eff_min": 0.48050422960413586
+    }
+  },
+  "circuital": {
+    "dark_circuital_real.txt": {
+      "Rsh_ohm": 296769.1774302322,
+      "J0_A_m2": 5.025446263685073e-08,
+      "mu_eff_cm2Vs": 8.870198888288186e-05,
+      "R2": 0.9982217676552425,
+      "Best_thickness_nm": 105.0
+    },
+    "dark_circuital_real.txt#seconds": 11.6
+  }
+}

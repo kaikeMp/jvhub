@@ -1,0 +1,67 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jvhub"
+dynamic = ["version"]
+description = "Multi-model analysis of current density-voltage (J-V) curves of solar cells: PV parameters, Mott-Gurney, equivalent circuit and Richardson-Schottky."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Kaike Rosivan Maia Pacheco" }]
+keywords = [
+    "solar cells",
+    "organic photovoltaics",
+    "J-V curve",
+    "I-V curve",
+    "Mott-Gurney",
+    "space-charge-limited current",
+    "Richardson-Schottky",
+    "thermionic emission",
+    "equivalent circuit",
+    "charge carrier mobility",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Education",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "Typing :: Typed",
+]
+dependencies = [
+    "numpy>=1.22",
+    "scipy>=1.8",
+    "pandas>=1.4",
+    "openpyxl>=3.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/kaikeMp/jvhub"
+Repository = "https://github.com/kaikeMp/jvhub"
+Issues = "https://github.com/kaikeMp/jvhub/issues"
+Changelog = "https://github.com/kaikeMp/jvhub/blob/main/CHANGELOG.md"
+Paper = "https://doi.org/10.1016/j.cpc.2026.110129"
+"Graphical program" = "https://github.com/kaikeMp/jv-analysis-hub"
+"Program files (CPC Library)" = "https://doi.org/10.17632/k8h975xxp6.1"
+
+[tool.hatch.version]
+path = "src/jvhub/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src/jvhub", "tests", "README.md", "LICENSE", "CITATION.cff", "CHANGELOG.md"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jvhub"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: equivalent-circuit fits that take several seconds"]

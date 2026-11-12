@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use jvhub, please cite the article below."
+title: "jvhub: multi-model analysis of J-V curves of solar cells"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/kaikeMp/jvhub"
+authors:
+  - given-names: Kaike
+    family-names: Rosivan Maia Pacheco
+    orcid: "https://orcid.org/0000-0002-6140-336X"
+    affiliation: "Universidade Federal do Paraná"
+keywords:
+  - solar cells
+  - organic photovoltaics
+  - J-V curve
+  - Mott-Gurney
+  - Richardson-Schottky
+  - equivalent circuit
+preferred-citation:
+  type: article
+  title: "J-V analysis hub: an open-source Python tool for multi-model characterization of organic solar cells"
+  journal: "Computer Physics Communications"
+  volume: 324
+  start: 110129
+  year: 2026
+  doi: "10.1016/j.cpc.2026.110129"
+  authors:
+    - given-names: Kaike
+      family-names: Rosivan Maia Pacheco
+      orcid: "https://orcid.org/0000-0002-6140-336X"
+    - given-names: Leandro
+      family-names: Benatto
+      orcid: "https://orcid.org/0000-0001-9976-3574"
+    - given-names: Elis
+      family-names: Keller Lubacheski
+      orcid: "https://orcid.org/0009-0003-2967-4324"
+    - given-names: João
+      family-names: Paulo Souza Araújo
+      orcid: "https://orcid.org/0000-0003-4609-552X"
+    - given-names: Gabriel
+      family-names: Manika Koeb
+      orcid: "https://orcid.org/0009-0007-2194-8203"
+    - given-names: Matheus
+      family-names: Felipe Fagundes das Neves
+      orcid: "https://orcid.org/0000-0002-0242-7820"
+    - given-names: Victoria
+      family-names: Mancini
+      orcid: "https://orcid.org/0009-0005-3795-2368"
+    - given-names: Marcos G.
+      family-names: Menezes
+      orcid: "https://orcid.org/0000-0001-8143-0181"
+    - given-names: Marlus
+      family-names: Koehler
+      orcid: "https://orcid.org/0000-0001-9935-5060"
+    - given-names: Lucimara
+      family-names: Stolz Roman
+      orcid: "https://orcid.org/0000-0001-6567-5920"
