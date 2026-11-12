@@ -9,7 +9,7 @@ description = "Multi-model analysis of current density-voltage (J-V) curves of s
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Kaike Rosivan Maia Pacheco" }]
 keywords = [
     "solar cells",

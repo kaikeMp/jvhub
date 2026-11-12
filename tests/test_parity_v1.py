@@ -14,7 +14,12 @@ from pytest import approx
 
 import jvhub
 
+# Deterministic calculations (interpolation, smoothing, linear regression, Mott-Gurney) agree with
+# v1.0.0 to rounding error. Quantities from iterative nonlinear fits (Richardson-Schottky) are only
+# converged to the solver tolerance (scipy curve_fit: xtol = ftol = 1.5e-8) and differ in the last
+# digits between platforms (BLAS/libm), so they are compared at 1e-6.
 RTOL = 1e-9
+RTOL_FIT = 1e-6
 
 PV_FILES = {
     "illuminated_real.txt": 0.09,
@@ -33,9 +38,9 @@ PV_KEYS = {
 }
 
 
-def check(result, expected, keys):
+def check(result, expected, keys, rtol=RTOL):
     for old, new in keys.items():
-        assert getattr(result, new) == approx(expected[old], rel=RTOL), new
+        assert getattr(result, new) == approx(expected[old], rel=rtol), new
 
 
 @pytest.mark.parametrize("name", PV_FILES)
@@ -84,7 +89,7 @@ def test_richardson_schottky(data_dir, reference, name, thickness):
         keys["phi_eff_min"] = "phi_eff_min_eV"
     else:
         assert result.phi_eff_min_eV is None
-    check(result, reference["richardson_schottky"][key], keys)
+    check(result, reference["richardson_schottky"][key], keys, rtol=RTOL_FIT)
 
 
 # The circuital model is intentionally NOT compared with v1.0.0: in v1.0.0 the inner solver

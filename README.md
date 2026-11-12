@@ -27,7 +27,7 @@ used in scripts, notebooks, batch processing or your own applications.
 pip install jvhub
 ```
 
-Requires Python ≥ 3.9 with NumPy, SciPy, pandas and openpyxl (installed automatically).
+Requires Python ≥ 3.10 with NumPy, SciPy, pandas and openpyxl (installed automatically).
 
 ## Quick start
 

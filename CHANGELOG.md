@@ -2,7 +2,7 @@
 
 ## 0.1.0 (unreleased)
 
-First release. The calculations of the JV Analysis Hub v1.0.0 desktop program as a Python library
+First release, for Python >= 3.10 (tested on 3.10-3.14 on Linux, Windows and macOS). The calculations of the JV Analysis Hub v1.0.0 desktop program as a Python library
 without graphical interface.
 
 - `JVCurve`, `read_jv` and `read_table`: J-V data in any of A, mA, A/m², mA/cm² with explicit area units.
