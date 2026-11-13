@@ -4,10 +4,15 @@
 
 # jvhub
 
+[![PyPI](https://img.shields.io/pypi/v/jvhub)](https://pypi.org/project/jvhub/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24171098.svg)](https://doi.org/10.5281/zenodo.24171098)
+
 **Multi-model analysis of current density–voltage (J–V) curves of solar cells, in Python.**
 
 📄 **Paper:** [J-V analysis hub: an open-source Python tool for multi-model characterization of organic solar cells](https://doi.org/10.1016/j.cpc.2026.110129),
 *Computer Physics Communications* **324** (2026) 110129 — open access.
+
+💾 **Software archive (Zenodo):** [doi:10.5281/zenodo.24171098](https://doi.org/10.5281/zenodo.24171098) (all versions).
 
 `jvhub` is the Python library of [JV Analysis Hub](https://github.com/kaikeMp/jv-analysis-hub), the open-source program described in
 *Computer Physics Communications* **324** (2026) 110129 ([doi:10.1016/j.cpc.2026.110129](https://doi.org/10.1016/j.cpc.2026.110129)).
@@ -173,6 +178,13 @@ If you use `jvhub` in published work, please cite:
 > Computer Physics Communications **324** (2026) 110129. https://doi.org/10.1016/j.cpc.2026.110129
 
 The BibTeX entry is available from Python with `print(jvhub.citation())`.
+
+To cite the software itself (for example, to record the exact version used), use its Zenodo archive:
+
+| Record | DOI |
+|---|---|
+| All versions (always resolves to the latest) | [10.5281/zenodo.24171098](https://doi.org/10.5281/zenodo.24171098) |
+| Version 0.1.0 | [10.5281/zenodo.24171099](https://doi.org/10.5281/zenodo.24171099) |
 
 ## Graphical program
 
